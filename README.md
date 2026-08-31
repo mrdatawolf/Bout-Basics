@@ -13,7 +13,9 @@ An interactive spectator guide to roller derby — explains how the game is play
 
 ## How it works
 
-Single `index.html` file — no build step, no dependencies.
+Static HTML, CSS, and JavaScript with no build step or runtime dependencies. Play data, track rendering, UI behavior, and visualization styles are kept in separate focused files.
+
+Run `node validate-data.js` after editing the play catalog to check required fields, IDs, categories, step durations, and track coordinates.
 
 **Desktop:** clicking a card expands it inline (pushing cards below down with a smooth animation) while a side panel shows the interactive step-through. Click the track or use Back/Next to advance steps.
 

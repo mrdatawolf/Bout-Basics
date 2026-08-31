@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>Roller Derby — Spectator Guide</title>
 <link rel="stylesheet" href="default.css">
+<link rel="stylesheet" href="visualizations.css">
 </head>
 <body>
 <div class="app">
@@ -31,11 +33,13 @@
   </header>
   <div class="content">
     <div class="grid-area"><div class="grid" id="cardGrid"></div></div>
-    <aside class="panel" id="panel" role="complementary" aria-label="Play detail">
+    <aside class="panel" id="panel" role="region" aria-label="Play detail" aria-hidden="true">
       <div class="panel-inner" id="panelInner"></div>
     </aside>
   </div>
 </div>
+<script src="plays.js"></script>
+<script src="track.js"></script>
 <script src="default.js"></script>
 </body>
 </html>
